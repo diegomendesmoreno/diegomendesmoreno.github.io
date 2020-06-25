@@ -1,11 +1,49 @@
 /* style.css */
-#header{
-  text-align: center;
-  background-color: white;
-  padding: 100px;
-  text-shadow: 1px 1px 5px grey;
+
+body {
+  margin: 0px;
+  background-color: rgb(230, 230, 230);
 }
-#header h1 {
-  color: #DDE7F2;
-  font-size: 50px;
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
+  background-color: rgb(30, 30, 30);
+  font-family: 'Chivo', sans-serif;
+  font-size: 24px;
+  color: white;
+  padding: 100px 0px;
+  margin: 0px;
+}
+
+#profile img {
+  border-radius: 50%;
+  margin-left: 300px;
+}
+
+.about {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.container-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+  width: 400px;
+}
+
+.link img {
+  height: 50px;
+}
+
+.link img:hover {
+  height: 52px;
+}
+
+.CVs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
 }
