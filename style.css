@@ -1,9 +1,12 @@
 /* style.css */
 
 body {
-  margin: 0px;
   background-color: rgb(230, 230, 230);
+  margin: 0px;
 }
+
+
+/* Custom Class design */
 
 .banner {
   display: grid;
@@ -13,13 +16,15 @@ body {
   font-family: 'Chivo', sans-serif;
   font-size: 24px;
   color: white;
-  padding: 100px 0px;
-  margin: 0px;
+  padding: 50px 0px 50px 0px;
 }
 
-#profile img {
+.profile {
+  text-align: center;
+}
+
+#profile-pic {
   border-radius: 50%;
-  margin-left: 300px;
 }
 
 .about {
@@ -46,4 +51,21 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
+}
+
+
+/* Media queries */
+@media (max-width: 800px) {
+  .banner {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .container-links {
+    margin: 50px;  
+    width: auto;
+  }
 }
