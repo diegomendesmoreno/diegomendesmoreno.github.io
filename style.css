@@ -1,0 +1,71 @@
+/* style.css */
+
+body {
+  background-color: rgb(230, 230, 230);
+  margin: 0px;
+}
+
+
+/* Custom Class design */
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
+  background-color: rgb(30, 30, 30);
+  font-family: 'Chivo', sans-serif;
+  font-size: 24px;
+  color: white;
+  padding: 50px 0px 50px 0px;
+}
+
+.profile {
+  text-align: center;
+}
+
+#profile-pic {
+  border-radius: 50%;
+}
+
+.about {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.container-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  width: 400px;
+}
+
+.link img {
+  height: 50px;
+}
+
+.link img:hover {
+  height: 52px;
+}
+
+.CVs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+
+/* Media queries */
+@media (max-width: 1000px) {
+  .banner {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .container-links {
+    margin: 50px;  
+    width: auto;
+  }
+}
