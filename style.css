@@ -34,7 +34,7 @@ body {
 
 .container-links {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
   width: 400px;
 }
@@ -45,12 +45,6 @@ body {
 
 .link img:hover {
   height: 52px;
-}
-
-.CVs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 5px;
 }
 
 
