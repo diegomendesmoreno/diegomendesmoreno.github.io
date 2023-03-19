@@ -39,6 +39,12 @@ body {
   width: 400px;
 }
 
+.CVs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
 .link img {
   height: 50px;
 }
