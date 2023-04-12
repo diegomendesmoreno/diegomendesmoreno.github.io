@@ -1,52 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=Overpass:wght@300;400;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Mendes Moreno - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="banner">
-
-		<div class="profile">
-			<img src="images/profile_pic.jpeg" alt="Profile Pic" id="profile-pic">
-		</div>
-
-		<div>
-			<div class="about">
-				<h1>Diego Mendes Moreno</h1>
-				<p>Software Engineer</p>
-			</div>
-
-			<div class="container-links">
-				<div class="link">
-					<a href="https://www.linkedin.com/in/diego-mendes-moreno-8246a62a/" target="_blank">
-					<img src="images/linkedin_logo.png" alt="LinkedIn">
-					</a>
-				</div>
-
-				<div class="link">
-					<a href="https://github.com/diegomendesmoreno" target="_blank">
-					<img src="images/github_logo.png" alt="GitHub">
-					</a>
-				</div>
-
-                <div class="link">
-					<div class="CVs">
-						<div>
-							<a href="files/CV Diego Moreno - Software Engineer.pdf" target="_blank">
-								<img src="images/cv_eng.png" alt="Resume in English">
-							</a>
-						</div>
-                        
-						<div>
-							<a href="files/CV Diego Moreno - Engenheiro de Software.pdf" target="_blank">
-								<img src="images/cv_pt.png" alt="Currículo em português">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <header>
+            <div class="theme-toggle">
+              <input type="checkbox" id="toggle-switch" class="toggle-switch">
+              <label for="toggle-switch" class="toggle-label"></label>
+            </div>
+            <h1>Diego Mendes Moreno</h1>
+            <img src="assets/profile_pic.jpeg" alt="Profile picture of Diego Mendes Moreno" class="profile-pic">
+            <h2>Software Engineer</h2>
+        </header>
+        <main>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/diego-mendes-moreno-8246a62a/" target="_blank" class="social-link linkedin" aria-label="Diego Mendes Moreno's LinkedIn">
+                    <img src="assets/linkedin_logo.png" alt="LinkedIn logo">
+                </a>
+                <a href="https://github.com/diegomendesmoreno" target="_blank" class="social-link github" aria-label="Diego Mendes Moreno's GitHub">
+                    <img src="assets/github_logo.png" alt="GitHub logo">
+                </a>
+                <a href="files/CV Diego Moreno - Software Engineer.pdf" target="_blank" class="social-link cv-english" aria-label="Diego Mendes Moreno's CV in English">
+                    <img src="assets/cv_eng.png" alt="CV English logo">
+                </a>
+                <a href="files/CV Diego Moreno - Engenheiro de Software.pdf" target="_blank" class="social-link cv-portuguese" aria-label="Diego Mendes Moreno's CV in Portuguese">
+                    <img src="assets/cv_pt.png" alt="CV Portuguese logo">
+                </a>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

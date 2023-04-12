@@ -1,0 +1,173 @@
+/* Reset and global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles */
+header {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #444;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #ccc;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #999;
+    margin-bottom: 2rem;
+}
+
+/* Social links and CV buttons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 1rem 1rem;
+    text-decoration: none;
+}
+
+.social-link img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    transition: transform 0.3s;
+    border-radius: 10%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    background-color: #444;
+}
+
+.social-link.github img {
+    background-color: #444;
+}
+
+.social-link:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-link {
+    margin: 1rem;
+    width: calc(50% - 2rem);
+    text-align: center;
+  }
+}
+
+/* Toggle switch styles */
+.theme-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-switch {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-label {
+  display: inline-block;
+  background-color: #ccc;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.toggle-label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #222;
+  transition: transform 0.3s;
+}
+
+.toggle-switch:checked + .toggle-label {
+  background-color: #eee;
+}
+
+.toggle-switch:checked + .toggle-label:before {
+  transform: translateX(24px);
+  background-color: #fff;
+}
+
+/* Light theme styles */
+.light-theme body {
+  background-color: #f4f4f4;
+}
+
+.light-theme .container {
+  background-color: #fff;
+}
+
+.light-theme .profile-pic {
+  border: 5px solid #333;
+}
+
+.light-theme h1 {
+  color: #222
+}
+
+.light-theme h2 {
+  color: #777;
+}
+
+.light-theme .social-link img {
+  background-color: #d4d4d4;
+}
+
+.light-theme .social-link.github img {
+  background-color: #333;
+}
